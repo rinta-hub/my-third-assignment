@@ -1,3 +1,5 @@
+// https://github.com/rinta-hub/my-third-assignment
+
 function kilometerToMeter(kilometer){
      var meter  = kilometer * 1000;
      return meter;
@@ -47,15 +49,15 @@ console.log(count);
 
 // megaFriend
 function megaFriend(names){
-     var max =names[0];
+     var longest = [''] ;
      for(var i = 0; i< names.length; i++){
-          var element = names[i];
-          if(elements > max){
-               max = element;
+          var elements = names[i];
+          if(elements.length > longest.length){
+               longest = names[i];
           }
-          return max;
+          return longest;
      }
 }
-var names = [amina, amin, jui, juti];
+var names = ['amina, amin, jui, juti'];
 var result = megaFriend(names);
-console.log('big name of the array:', result);
+console.log(megaFriend(result));
